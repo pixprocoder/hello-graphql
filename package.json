@@ -5,11 +5,12 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "compile": "tsc",
-    "start": "yarn run compile && node ./dist/index.js"
+    "compile": "tsc -W",
+    "start": "nodemon ./dist/index.js"
   },
   "dependencies": {
     "@apollo/server": "^4.9.5",
-    "graphql": "^16.8.1"
+    "graphql": "^16.8.1",
+    "nodemon": "^3.0.1"
   }
 }
